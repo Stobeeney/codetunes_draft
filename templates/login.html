@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!-- Correct way to reference CSS directly in static folder -->
+    <link href="{{ url_for('static', filename='main.css') }}" rel="stylesheet">
+</head>
+
+<body>
+    <div class="v71_238">
+        <!-- Correct way to reference background image directly in static folder -->
+        <div class="v71_411" style="background-image: url('{{ url_for('static', filename='v71_411.png') }}');">
+        </div>
+        <!-- Centered black div -->
+        <div class="v71_244">
+            <span class="v71_421">CodeTunes</span>
+            <span class="v71_422">CMPE 201</span>
+            <a href="{{ url_for('homepage') }}" class="start-presentation">Start Presentation</a>
+            <span class="v71_426">BSCPE 2-2</span>
+        </div>
+    </div>
+</body>
+
+</html>
